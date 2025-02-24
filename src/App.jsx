@@ -11,26 +11,37 @@ import Blocks from "./pages/Blocks/Index";
 import ProVersion from "./pages/ProVersion/Index";
 import Pricing from "./pages/Pricing/Index";
 import Login from "./pages/Login/Index";
+import { createContext, useState } from "react";
+
+export const ThemeContext = createContext(null);
 
 const App = () => {
+  const [theme, setTheme] = useState("dark");
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "dark" ? "light": "dark"))
+  }
+
   return (
-    <div className="" id="">
-      <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blocks" element={<Blocks/>} />
-          <Route path="/figma" element={<Figma/>}/>
-          <Route path="/icons" element={<Icons/>}/>
-          <Route path="/illustrations" element={<Illustrations/>}/>
-          <Route path="/blog" element={<Blog/>}/>
-          <Route path="/proversion" element={<ProVersion/>}/>
-          <Route path="/pricing" element={<Pricing/>}/>
-          <Route path="/login" element={<Login/>}/>
-        </Routes>
-      </BrowserRouter>
-      <Footer />
-    </div>
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+      <div className="flex flex-col min-h-screen" id={theme}>
+        <Header />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blocks" element={<Blocks />} />
+            <Route path="/figma" element={<Figma />} />
+            <Route path="/icons" element={<Icons />} />
+            <Route path="/illustrations" element={<Illustrations />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/proversion" element={<ProVersion />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </BrowserRouter>
+        <Footer />
+      </div>
+    </ThemeContext.Provider>
   );
 };
 
