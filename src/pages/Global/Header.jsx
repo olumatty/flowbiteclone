@@ -16,8 +16,8 @@ const Header = ({darkMode, setDarkMode}) => {
   const navigate = useNavigate();
 
   return (
-    <div className="sticky top-0 z-40 flex-none mx-auto w-full max-w-[1440px]">
-      <header className="w-full px-3 py-3 fixed top-0 z-30 max-w-[1440px] mx-auto bg-whit">
+    <div className="sticky top-0 z-[9999] flex-none mx-auto w-full max-w-[1440px]">
+      <header className="w-full px-3 py-3 fixed  top-0 z-30 max-w-[1440px] mx-auto ">
         <div className="hidden  lg:flex items-center lg:justify-between">
           <div className="flex items-center gap-x-12">
             <div onClick={() => navigate("/")}  className="flex items-center gap-x-3 cursor-pointer">
@@ -27,7 +27,7 @@ const Header = ({darkMode, setDarkMode}) => {
               </span>
             </div>
 
-            <div className={`flex z-50 items-center justify-between rounded-[8px] px-3 min-w-[300px] h-10  cursor-pointer ${darkMode?  "dark:bg-gray-700 dark:text-gray-400 hover:dark:bg-gray-500" : "bg-gray-50 border text-gray-400 border-gray-200"}`}>
+            <div className={`flex z-50 items-center justify-between rounded-[8px] px-3 min-w-[300px] h-10  cursor-pointer ${darkMode ? "dark:bg-gray-700 dark:text-gray-400 hover:dark:bg-gray-500" : "bg-gray-50 border text-gray-400 border-gray-200"}`}>
               <div className="flex items-center gap-2">
                 <RiSearch2Line />
                 <span className="text-[14px]">Search</span>
