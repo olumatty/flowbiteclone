@@ -20,7 +20,7 @@ const Header = ({darkMode, setDarkMode}) => {
       <header className="w-full px-3 py-3 fixed top-0 z-30 max-w-[1440px] mx-auto bg-whit">
         <div className="hidden  lg:flex items-center lg:justify-between">
           <div className="flex items-center gap-x-12">
-            <div className="flex items-center gap-x-3">
+            <div onClick={() => navigate("/")}  className="flex items-center gap-x-3 cursor-pointer">
               <img src={Logo} alt="logo" className="" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap">
                 Flowbite

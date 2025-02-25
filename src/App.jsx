@@ -33,7 +33,7 @@ const App = () => {
         <BrowserRouter>
           <Header key={darkMode ? "dark" : "light"} darkMode={darkMode} setDarkMode={setDarkMode}/>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home key={darkMode ? "dark" : "light"} darkMode={darkMode} setDarkMode={setDarkMode} />} />
             <Route path="/blocks" element={<Blocks />} />
             <Route path="/figma" element={<Figma />} />
             <Route path="/icons" element={<Icons />} />
