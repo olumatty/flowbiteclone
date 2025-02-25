@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./ThemeContext";
 import Header from "./pages/Global/Header";
 import Home from "./pages/Home/Index";
 import Footer from "./pages/Global/Footer";
@@ -11,22 +12,13 @@ import Blocks from "./pages/Blocks/Index";
 import ProVersion from "./pages/ProVersion/Index";
 import Pricing from "./pages/Pricing/Index";
 import Login from "./pages/Login/Index";
-import { createContext, useState } from "react";
-
-export const ThemeContext = createContext(null);
 
 const App = () => {
-  const [theme, setTheme] = useState("dark");
-
-  const toggleTheme = () => {
-    setTheme((curr) => (curr === "dark" ? "light": "dark"))
-  }
-
   return (
-    <ThemeContext.Provider value={{theme, toggleTheme}}>
-      <div className="flex flex-col min-h-screen" id={theme}>
-        <Header />
+    <ThemeProvider>
+      <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white">
         <BrowserRouter>
+          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blocks" element={<Blocks />} />
@@ -38,10 +30,10 @@ const App = () => {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/login" element={<Login />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
-        <Footer />
       </div>
-    </ThemeContext.Provider>
+    </ThemeProvider>
   );
 };
 
