@@ -1,5 +1,6 @@
 import React from "react";
 import { MdArrowForwardIos } from "react-icons/md";
+import { MdGridView } from "react-icons/md";
 
 const Hero = ({ darkMode, setDarkMode }) => {
   return (
@@ -8,7 +9,7 @@ const Hero = ({ darkMode, setDarkMode }) => {
         darkMode ? "bg-gray-900" : "dark-white"
       }`}
     >
-      <div className="px-4 mx-auto max-w-[1440px] lg:px-4 text-center">
+      <div className="px-4 mx-auto max-w-[1440px]  text-center">
         <div
           className={`inline-flex items-center justify-between px-1 py-1 pr-4 mb-5 text-sm ${
             darkMode
@@ -38,7 +39,7 @@ const Hero = ({ darkMode, setDarkMode }) => {
         </h1>
       </div>
       <p
-        className={`mb-10 text-[14px] font-normal text-center lg:text-xl lg:px-70 ${
+        className={`mb-8 md:mb-10 text-[14px] font-normal text-center lg:text-xl lg:px-70 ${
           darkMode ? " dark:text-gray-400" : "text-gray-500 "
         }`}
       >
@@ -47,17 +48,29 @@ const Hero = ({ darkMode, setDarkMode }) => {
         built with the utility classes from Tailwind CSS and designed in Figma.
       </p>
 
-      <div className="flex gap-8 items-center justify-center flex-col md:flex-row mb-30">
+      <div className="flex gap-4 md:gap-8 items-center justify-center flex-col md:flex-row mb-16 md:mb-22">
         <div className="py-3 px-6 bg-blue-600 hover:bg-blue-700 transition-all duration-200 rounded-[10px]">
-            <button className="cursor-pointer text-[16px] font-medium">Get Started</button>
+          <button className="cursor-pointer text-[16px] font-medium">
+            Get Started
+          </button>
         </div>
 
-        <div className={`py-3 px-6 border rounded-[10px] border-gray-200 ${darkMode ? "dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-600 dark:bg-gray-800" 
-            : "text-gray-900 bg-white-100 hover:bg-gray-100 hover:text-blue-700 "} inline-flex items-center justify-center`}>
-            
-            <button>Explore Components</button>
+        <div
+          className={`py-3 px-6 border rounded-[10px] border-gray-200 ${
+            darkMode
+              ? "dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-600 dark:bg-gray-800"
+              : "text-gray-900 bg-white-100 hover:bg-gray-100 hover:text-blue-700 "
+          } inline-flex items-center justify-center text-[16px]`}
+        >
+          <MdGridView />
+          <button className="ml-1">Explore Components</button>
         </div>
       </div>
+
+      <div className=" flex items-center justify-center mx-auto">
+      <iframe src="https://www.youtube.com/embed/4bnJG2UDr9A?si=DNPRNHEY_gJWQRnT"  className="aspect-video h-full max-h-[400px] md:max-h-[500px] rounded-[10px] w-full max-w-[400px] md:max-w-[1000px] border border-gray-700"></iframe>
+      </div>
+      
     </div>
   );
 };

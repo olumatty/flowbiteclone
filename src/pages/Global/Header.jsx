@@ -30,7 +30,7 @@ const Header = ({darkMode, setDarkMode}) => {
             <div className={`flex z-50 items-center justify-between rounded-[8px] px-3 min-w-[300px] h-10  cursor-pointer ${darkMode?  "dark:bg-gray-700 dark:text-gray-400 hover:dark:bg-gray-500" : "bg-gray-50 border text-gray-400 border-gray-200"}`}>
               <div className="flex items-center gap-2">
                 <RiSearch2Line />
-                <span className="text-[14px] font-medium">Search</span>
+                <span className="text-[14px]">Search</span>
               </div>
               <div className="self-center">
                 <p className="text-[8px] font-semibold">
