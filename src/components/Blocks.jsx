@@ -4,7 +4,14 @@ import DarkHero from "../assets/hero-dark.svg";
 import LightHero from "../assets/hero.svg"
 import DarkHeader from "../assets/table-headers-dark.svg";
 import LightHeader from "../assets/table-headers.svg"
-import DarkNavbar from "../assets/sidebars-dark.svg"
+import DarkNavbar from "../assets/sidebars-dark.svg";
+import LightNavbar from "../assets/sidebars.svg";
+import DarkFeatures from "../assets/features-dark.svg";
+import LightFeatures from "../assets/features.svg"
+import DarkCTA from "../assets/cta-dark.svg";
+import LightCTA from "../assets/cta.svg"
+import DarkContent from "../assets/content-dark.svg";
+import LightContent from "../assets/content.svg"
 
 const Blocks = ({darkMode}) => {
   return (
@@ -34,7 +41,7 @@ const Blocks = ({darkMode}) => {
                             <h3 className='text-[14px] md:text-[16px] font-semibold'>Hero Sections</h3>
                             <p className={`${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>18 components</p>
                         </div>
-                        <div className={`rounded ${ darkMode ? "dark:bg-green-200 dark:text-green-800":"bg-green-100 text-green-800" }inline-flex `}>
+                        <div className={`rounded ${ darkMode ? "dark:bg-green-200 dark:text-green-400" : "bg-green-100 text-green-800" }inline-flex `}>
                             <span className='text-[11px] font-medium px-2.5 py-0.5 text-center'>Marketing UI</span>
                         </div>
                     </div>
@@ -56,7 +63,7 @@ const Blocks = ({darkMode}) => {
                             <h3 className='text-[14px] md:text-[16px] font-semibold'>Table Headers</h3>
                             <p className={`${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>13 components</p>
                         </div>
-                        <div className={`rounded ${ darkMode ? "dark:bg-blue-200 dark:text-blue-800":"bg-blue-100 text-blue-800" } inline-flex `}>
+                        <div className={`rounded ${ darkMode ? "dark:bg-blue-200 dark:text-blue-400":"bg-blue-100 text-blue-800" } inline-flex `}>
                             <span className='text-[11px] font-medium px-2.5 py-0.5 text-center'>Application UI</span>
                         </div>
                     </div>
@@ -77,23 +84,96 @@ const Blocks = ({darkMode}) => {
                 <div className={`h-64 md:h-80 cursor-pointer rounded-lg border ${darkMode ? "dark:border-gray-800 dark:hover:border-gray-700 dark:shadow-lg-light dark:bg-gray-900 " : "border-gray-100 hover:border-white"}`}>
                     <div className={` rounded-t-md py-2.5 px-5 flex  justify-between items-center border-b ${darkMode ? "dark:bg-gray-700 dark:border-gray-700 " : "bg-gray-50 border-gray-200 "}`}>
                         <div className='flex items-start flex-col'>
-                            <h3 className='text-[14px] md:text-[16px] font-semibold'>Hero Sections</h3>
-                            <p className={`${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>18 components</p>
+                            <h3 className='text-[14px] md:text-[16px] font-semibold'>Side Navigations</h3>
+                            <p className={`${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>12 components</p>
                         </div>
-                        <div className={`rounded${ darkMode ? "dark:bg-green-200 dark:text-green-200":"bg-green-100 text-green-800" }inline-flex `}>
+                        <div className={`rounded ${ darkMode ? "dark:bg-blue-200 dark:text-blue-800":"bg-blue-100 text-blue-800" } inline-flex `}>
+                            <span className='text-[11px] font-medium px-2.5 py-0.5 text-center'>Application UI</span>
+                        </div>
+                    </div>
+
+                    <div className='relative flex items-center justify-center h-[calc(100%-4rem)]'>
+                        <div className={`relative w-full h-auto  text-center ${darkMode ? "block" : "hidden"}`}>
+                            <img src={DarkNavbar} alt='image' className='h-44 md:h-52 mx-auto max-w-full'/>
+                        </div>
+
+                        <div className={`relative w-full h-auto  text-center ${darkMode ? "hidden" : "block"}`}>
+                            <img src={LightNavbar} alt='image' className='h-44 md:h-52 mx-auto max-w-full'/>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={`h-64 md:h-80 cursor-pointer rounded-lg border ${darkMode ? "dark:border-gray-800 dark:hover:border-gray-700 dark:shadow-lg-light dark:bg-gray-900 " : "border-gray-100 hover:border-white"}`}>
+                    <div className={` rounded-t-md py-2.5 px-5 flex  justify-between items-center border-b ${darkMode ? "dark:bg-gray-700 dark:border-gray-700 " : "bg-gray-50 border-gray-200 "}`}>
+                        <div className='flex items-start flex-col'>
+                            <h3 className='text-[14px] md:text-[16px] font-semibold'>Feature Sections</h3>
+                            <p className={`${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>10 components</p>
+                        </div>
+                        <div className={`rounded ${ darkMode ? "dark:bg-green-200 dark:text-green-800":"bg-green-100 text-green-800" }inline-flex `}>
                             <span className='text-[11px] font-medium px-2.5 py-0.5 text-center'>Marketing UI</span>
                         </div>
                     </div>
 
                     <div className='relative flex items-center justify-center h-[calc(100%-4rem)]'>
                         <div className={`relative w-full h-auto  text-center ${darkMode ? "block" : "hidden"}`}>
-                            <img src={DarkHero} alt='image' className='h-44 md:h-52 mx-auto max-w-full'/>
+                            <img src={DarkFeatures} alt='image' className='h-44 md:h-52 mx-auto max-w-full'/>
                         </div>
 
                         <div className={`relative w-full h-auto  text-center ${darkMode ? "hidden" : "block"}`}>
-                            <img src={LightHero} alt='image' className='h-44 md:h-52 mx-auto max-w-full'/>
+                            <img src={LightFeatures} alt='image' className='h-44 md:h-52 mx-auto max-w-full'/>
                         </div>
                     </div>
+                </div>
+
+
+
+                <div className={`h-64 md:h-80 cursor-pointer rounded-lg border ${darkMode ? "dark:border-gray-800 dark:hover:border-gray-700 dark:shadow-lg-light dark:bg-gray-900 " : "border-gray-100 hover:border-white"}`}>
+                    <div className={` rounded-t-md py-2.5 px-5 flex  justify-between items-center border-b ${darkMode ? "dark:bg-gray-700 dark:border-gray-700 " : "bg-gray-50 border-gray-200 "}`}>
+                        <div className='flex items-start flex-col'>
+                            <h3 className='text-[14px] md:text-[16px] font-semibold'>CTA Sections</h3>
+                            <p className={`${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>10 components</p>
+                        </div>
+                        <div className={`rounded ${ darkMode ? "dark:bg-green-200 dark:text-green-800":"bg-green-100 text-green-800" }inline-flex `}>
+                            <span className='text-[11px] font-medium px-2.5 py-0.5 text-center'>Marketing UI</span>
+                        </div>
+                    </div>
+
+                    <div className='relative flex items-center justify-center h-[calc(100%-4rem)]'>
+                        <div className={`relative w-full h-auto  text-center ${darkMode ? "block" : "hidden"}`}>
+                            <img src={DarkCTA} alt='image' className='h-44 md:h-52 mx-auto max-w-full'/>
+                        </div>
+
+                        <div className={`relative w-full h-auto  text-center ${darkMode ? "hidden" : "block"}`}>
+                            <img src={LightCTA} alt='image' className='h-44 md:h-52 mx-auto max-w-full'/>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={`h-64 md:h-80 cursor-pointer rounded-lg border ${darkMode ? "dark:border-gray-800 dark:hover:border-gray-700 dark:shadow-lg-light dark:bg-gray-900 " : "border-gray-100 hover:border-white"}`}>
+                    <div className={` rounded-t-md py-2.5 px-5 flex  justify-between items-center border-b ${darkMode ? "dark:bg-gray-700 dark:border-gray-700 " : "bg-gray-50 border-gray-200 "}`}>
+                        <div className='flex items-start flex-col'>
+                            <h3 className='text-[14px] md:text-[16px] font-semibold'>Content Sections</h3>
+                            <p className={`${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>18 components</p>
+                        </div>
+                        <div className={`rounded ${ darkMode ? "dark:bg-green-200 dark:text-green-800":"bg-green-100 text-green-800" }inline-flex `}>
+                            <span className='text-[11px] font-medium px-2.5 py-0.5 text-center'>Marketing UI</span>
+                        </div>
+                    </div>
+
+                    <div className='relative flex items-center justify-center h-[calc(100%-4rem)]'>
+                        <div className={`relative w-full h-auto  text-center ${darkMode ? "block" : "hidden"}`}>
+                            <img src={DarkContent} alt='image' className='h-44 md:h-52 mx-auto max-w-full'/>
+                        </div>
+
+                        <div className={`relative w-full h-auto  text-center ${darkMode ? "hidden" : "block"}`}>
+                            <img src={LightContent} alt='image' className='h-44 md:h-52 mx-auto max-w-full'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='flex items-center justify-center mt-5 md:mt-12'>
+                <div className={`px-5.5 py-2.5 border rounded-lg text-base relative btn ${darkMode ? "dark:bg-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-70 dark:border-gray-600 ": " text-gray-900 border-gray-200  hover:text-blue-500 bg-white "}`}>
+                    Views all block
                 </div>
             </div>
         </div>

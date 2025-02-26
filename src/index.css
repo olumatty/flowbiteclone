@@ -23,3 +23,44 @@ body {
   min-height: 100vh;
   font-family: "Poppins", serif;
 }
+
+.btn:before{
+  content:"";
+  position: absolute;
+  left:0;
+  top:0;
+  width: 0;
+  height: 0;
+  border-top:2px solid blue;
+  border-radius:8px;
+  border-right: 2px solid blue;
+  animation: border-top-right 2s infinite alternate;
+}
+
+.btn:after{
+  content:"";
+  position: absolute;
+  right:0;
+  bottom:0;
+  width: 0;
+  height: 0;
+  border-bottom:2px solid white;
+  border-radius:8px;
+  border-left:2px solid white;
+  animation: border-bottom-left 2s infinite alternate;
+}
+
+@keyframes border-top-right{
+  0% {width:0px; height:0px;}
+  25% {width:162px; height:0px;}
+  50%{width:162px; height:44px;}
+  100%{width:162px; height:44px;}
+}
+
+@keyframes border-bottom-left{
+  0% {width:0px; height:0px; opacity: 0}
+  50% {width:0px; height:0px; opacity: 0}
+  50.1%{width:0px; height:0px; opacity:1;}
+  75% {width:162px; height:0px; opacity:1;}
+  100%{width:162px; height:44px; opacity:1;}
+}

@@ -4,8 +4,9 @@ import Features from '../../components/Features'
 import Technologies from '../../components/Technologies'
 import Project from '../../components/Project'
 import Blocks from '../../components/Blocks'
+import Figma from '../../components/Figma'
 
-const Home = ({darkMode, setDarkMode}) => {
+const Home = ({darkMode}) => {
   return (
     <div className='grow'> 
       <Hero darkMode={darkMode}/>
@@ -13,6 +14,7 @@ const Home = ({darkMode, setDarkMode}) => {
       <Technologies darkMode={darkMode} />
       <Project darkMode= {darkMode}/>
       <Blocks darkMode={darkMode}/> 
+      <Figma darkMode={darkMode}/>
     </div>
   )
 }
