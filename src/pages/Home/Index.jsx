@@ -5,6 +5,7 @@ import Technologies from '../../components/Technologies'
 import Project from '../../components/Project'
 import Blocks from '../../components/Blocks'
 import Figma from '../../components/Figma'
+import DarkMode from '../../components/DarkMode'
 
 const Home = ({darkMode}) => {
   return (
@@ -15,6 +16,7 @@ const Home = ({darkMode}) => {
       <Project darkMode= {darkMode}/>
       <Blocks darkMode={darkMode}/> 
       <Figma darkMode={darkMode}/>
+      <DarkMode darkMode={darkMode}/>
     </div>
   )
 }
