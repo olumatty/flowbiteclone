@@ -11,7 +11,7 @@ const Project = ({darkMode}) => {
                 <div>
                     <blockquote className='mb-8'>
                         <h3 className='mb-4 text-[16px] md:text-[20px] font-semibold '> Solid foundation for any project</h3>
-                        <p className={`font-normal ${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}><p class="font-normal text-gray-500 dark:text-gray-400">"Flowbite provides a robust set of design tokens and components based on the popular Tailwind CSS framework. From the most used UI components like forms and navigation bars to the whole app screens designed both for desktop and mobile, this UI kit provides a solid foundation for any project. <br/> <br/>Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!"</p></p>
+                        <p className={`font-normal ${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>"Flowbite provides a robust set of design tokens and components based on the popular Tailwind CSS framework. From the most used UI components like forms and navigation bars to the whole app screens designed both for desktop and mobile, this UI kit provides a solid foundation for any project. <br/> <br/>Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!"</p>
                     </blockquote>
 
                     <div className='flex items-center'>

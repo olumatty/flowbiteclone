@@ -3,6 +3,7 @@ import Hero from '../../components/Hero'
 import Features from '../../components/Features'
 import Technologies from '../../components/Technologies'
 import Project from '../../components/Project'
+import Blocks from '../../components/Blocks'
 
 const Home = ({darkMode, setDarkMode}) => {
   return (
@@ -11,6 +12,7 @@ const Home = ({darkMode, setDarkMode}) => {
       <Features darkMode={darkMode} />
       <Technologies darkMode={darkMode} />
       <Project darkMode= {darkMode}/>
+      <Blocks darkMode={darkMode}/> 
     </div>
   )
 }
