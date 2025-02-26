@@ -1,7 +1,9 @@
 import React from "react";
 import FigmaImg from "../assets/figma.svg";
-import ArrowRight from "../assets/arrow-right.svg";
-import Flowbite from "../assets/Logo.svg"
+import Flowbite from "../assets/Logo.svg";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+import DarkFigma from "../assets/figma-mockup-dark.svg";
+import LightFigma from "../assets/figma-mockup-light.svg"
 
 const Figma = ({ darkMode }) => {
   return (
@@ -35,10 +37,10 @@ const Figma = ({ darkMode }) => {
 
               <div className="">
                 <div
-                  className={`flex items-center mb-4 justify-between w-[400px] px-5 py-3.5 border rounded-lg text-base relative  ${
+                  className={`flex items-center mb-4 justify-between self-stretch md:max-w-[400px] px-5 py-3.5 border focus:outline-none focus:ring-4 rounded-lg text-base relative  ${
                     darkMode
-                      ? "dark:bg-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-70 dark:border-gray-600 "
-                      : " text-gray-900 border-gray-200  hover:text-blue-500 bg-white "
+                      ? "dark:bg-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-600 "
+                      : " text-gray-900 border-gray-300 hover:bg-gray-100 hover:text-blue-500 focus:ring-gray-200 bg-white "
                   } `}
                 >
                   <div className="flex items-center gap-4">
@@ -52,15 +54,15 @@ const Figma = ({ darkMode }) => {
                     </p>
                   </div>
                   <div>
-                    <img src={ArrowRight} alt="arrow" className="h-6 w-6" />
+                  <MdOutlineArrowRightAlt className={`h-6 w-6 ${darkMode ? "dark:text-white": "text-gray-900"}`} />
                   </div>
                 </div>
 
                 <div
-                  className={`flex items-center justify-between w-[400px] px-5 py-3.5 border rounded-lg text-base relative  ${
+                  className={`flex items-center mb-4 justify-between self-stretch md:max-w-[400px] px-5 py-3.5 border focus:outline-none focus:ring-4 rounded-lg text-base relative  ${
                     darkMode
-                      ? "dark:bg-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-70 dark:border-gray-600 "
-                      : " text-gray-900 border-gray-200  hover:text-blue-500 bg-white "
+                      ? "dark:bg-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-600 "
+                      : " text-gray-900 border-gray-300 hover:bg-gray-100 hover:text-blue-500 focus:ring-gray-200 bg-white "
                   } `}
                 >
                   <div className="flex items-center gap-4">
@@ -74,15 +76,21 @@ const Figma = ({ darkMode }) => {
                     </p>
                   </div>
                   <div>
-                    <img src={ArrowRight} alt="arrow" className="h-6 w-6" />
+                    <MdOutlineArrowRightAlt className={`h-6 w-6 ${darkMode ? "dark:text-white": "text-gray-900"}`} />
                   </div>
                 </div>
-
-
-               
               </div>
             </div>
           </div>
+            <div className='hidden lg:flex flex-col items-center justify-center'>
+                <div className={`relative w-full h-auto  text-center ${darkMode ? "block" : "hidden"}`}>
+                    <img src={DarkFigma} alt='image' className=' mx-auto rounded-xl max-w-full'/>
+                </div>
+                
+                <div className={`relative w-full h-auto  text-center ${darkMode ? "hidden" : "block"}`}>
+                    <img src={LightFigma} alt='image' className='mx-auto rounded-xl max-w-full'/>
+                 </div>
+            </div>
         </div>
       </div>
     </div>
