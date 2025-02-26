@@ -31,13 +31,13 @@ const Technologies = ({ darkMode }) => {
         </p>
 
         <div
-          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-0 md:space-y-4 gap-4 lg:gap-6 md:mt-10 cursor-pointer md:px-50 `}
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-0 md:space-y-4 gap-4 lg:gap- md:mt-10 cursor-pointer md:px-50 `}
         >
           <div
-            className={`px-8 py-10 text-center rounded-lg shadow-md border ${
+            className={`px-8 py-10 text-center rounded-lg shadow-md border hover:shadow-lg transition duration-300 ${
               darkMode
-                ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                : "bg-white border-gray-200 hover:shadow-lg"
+                ? "dark:bg-gray-700 dark:border-gray-600"
+                : "bg-white border-gray-200"
             }`}
           >
             <FaReact className="w-12 h-12 mx-auto text-blue-500" />
@@ -208,7 +208,6 @@ const Technologies = ({ darkMode }) => {
             <FaReact className="w-12 h-12 mx-auto text-blue-500" />
             <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
           </div>
-
         </div>
       </div>
     </div>
