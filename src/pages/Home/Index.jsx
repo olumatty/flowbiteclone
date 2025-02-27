@@ -7,6 +7,7 @@ import Blocks from '../../components/Blocks'
 import Figma from '../../components/Figma'
 import DarkMode from '../../components/DarkMode'
 import RTL from '../../components/RTL'
+import FlowSVg from '../../components/FlowSVg'
 
 const Home = ({darkMode}) => {
   return (
@@ -19,6 +20,7 @@ const Home = ({darkMode}) => {
       <Figma darkMode={darkMode}/>
       <DarkMode darkMode={darkMode}/>
       <RTL darkMode={darkMode}/>
+      <FlowSVg darkMode={darkMode}/>
     </div>
   )
 }
