@@ -10,6 +10,8 @@ import RTL from '../../components/RTL'
 import FlowSVg from '../../components/FlowSVg'
 import FlowGpt from '../../components/FlowGpt'
 import FlowIllust from '../../components/FlowIllust'
+import FlowPro from '../../components/FlowPro'
+import Contributors from '../../components/Contributors'
 
 const Home = ({darkMode}) => {
   return (
@@ -25,6 +27,8 @@ const Home = ({darkMode}) => {
       <FlowSVg darkMode={darkMode}/>
       <FlowIllust darkMode={darkMode}/>
       <FlowGpt darkMode={darkMode}/>  
+      <FlowPro darkMode={darkMode}/>
+      <Contributors darkMode={darkMode}/>
     </div>
   )
 }
