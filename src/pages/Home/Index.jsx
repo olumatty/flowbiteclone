@@ -8,6 +8,8 @@ import Figma from '../../components/Figma'
 import DarkMode from '../../components/DarkMode'
 import RTL from '../../components/RTL'
 import FlowSVg from '../../components/FlowSVg'
+import FlowGpt from '../../components/FlowGpt'
+import FlowIllust from '../../components/FlowIllust'
 
 const Home = ({darkMode}) => {
   return (
@@ -21,6 +23,8 @@ const Home = ({darkMode}) => {
       <DarkMode darkMode={darkMode}/>
       <RTL darkMode={darkMode}/>
       <FlowSVg darkMode={darkMode}/>
+      <FlowGpt darkMode={darkMode}/>
+      <FlowIllust darkMode={darkMode}/>
     </div>
   )
 }
