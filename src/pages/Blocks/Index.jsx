@@ -1,9 +1,10 @@
 import React from 'react'
+import BlockHero from '../../components/BlockHero'
 
-const Blocks = () => {
+const Blocks = ({darkMode}) => {
   return (
-    <div>
-      Blocks
+    <div className='grow'>
+     <BlockHero darkMode={darkMode}/>
       
     </div>
   )

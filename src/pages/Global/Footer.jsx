@@ -115,6 +115,16 @@ const Footer = ({ darkMode }) => {
             </div>
           </div>
         </div>
+        <div className="mt-8 border-t border-gray-800">
+        <div
+              className={`flex flex-col text-center mt-10  cursor-pointer gap-2 hover:underline text-[14px] ${
+                darkMode
+                  ? "dark:text-gray-400 hover:dark:text-white"
+                  : "text-gray-500"
+              }`}
+            ><p> © 2019-2025 DevOlumatty™ is a registered trademark. All Rights Reserved.</p></div>
+
+        </div>
       </div>
     </div>
   );
