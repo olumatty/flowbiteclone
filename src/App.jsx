@@ -38,7 +38,7 @@ const App = () => {
             <Route path="/figma" element={<Figma />} />
             <Route path="/icons" element={<Icons />} />
             <Route path="/illustrations" element={<Illustrations />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog" element={<Blog darkMode={darkMode}  />} />
             <Route path="/proversion" element={<ProVersion />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/login" element={<Login />} />

@@ -1,9 +1,11 @@
 import React from 'react'
+import Blogs from '../../components/Blogs'
 
-const Blog = () => {
+
+const Blog = ({darkMode}) => {
   return (
     <div>
-      Blogs
+      <Blogs darkMode={darkMode} />
     </div>
   )
 }
