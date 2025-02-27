@@ -12,6 +12,7 @@ import FlowGpt from '../../components/FlowGpt'
 import FlowIllust from '../../components/FlowIllust'
 import FlowPro from '../../components/FlowPro'
 import Contributors from '../../components/Contributors'
+import NewsLetter from '../../components/NewsLetter'
 
 const Home = ({darkMode}) => {
   return (
@@ -29,6 +30,7 @@ const Home = ({darkMode}) => {
       <FlowGpt darkMode={darkMode}/>  
       <FlowPro darkMode={darkMode}/>
       <Contributors darkMode={darkMode}/>
+      <NewsLetter darkMode={darkMode}/>
     </div>
   )
 }
