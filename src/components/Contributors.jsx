@@ -11,7 +11,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Contributors = ({darkMode}) => {
   return (
-    <div className='mx-auto max-w-[1440px] px-4  py-8 lg:px-20 lg:py-24'>
+    <div className='mx-auto max-w-[1440px] px-4 border-t border-gray-800 py-8 lg:px-20 lg:py-24'>
         <div className='flex mx-auto items-center max-w-7xl flex-col gap-12'>
             <div className='max-w-2xl flex flex-col items-center justify-center gap-4'>
                 <h2 className='text-center text-3xl font-bold tracking-tight lg:text-4xl'>Community Contributors</h2>
@@ -43,7 +43,7 @@ const Contributors = ({darkMode}) => {
                     <img src={Person5} className='h-14 w-14 rounded-full'alt='Person1'/>
                 </div>
             </div>
-            <div className ={`flex  flex-col items-start w-full gap-4 lg:items-center p-4 lg:gap-8 lg:flex-row justify-between ${darkMode ? "dark:bg-gray-800 " : "bg-gray-500 "}`}>
+            <div className ={`flex  flex-col items-start rounded-md w-full gap-4 lg:items-center p-4 lg:gap-8 lg:flex-row justify-between ${darkMode ? "dark:bg-gray-800 " : "bg-gray-500 "}`}>
                 <div className='flex w-full flex-col'>
                     <h2 className='text-left text-xl font-bold tracking-tight '>Join the commmunity </h2>
                     <p className={`${darkMode? " dark:text-gray-400" : "text-gray-500 "}`}>Become a member of a community of developers by supporting Flowbite </p>

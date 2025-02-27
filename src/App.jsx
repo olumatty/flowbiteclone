@@ -43,7 +43,7 @@ const App = () => {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/login" element={<Login />} />
           </Routes>
-          <Footer />
+          <Footer darkMode={darkMode} />
         </BrowserRouter>
       </div>
   );
