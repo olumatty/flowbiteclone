@@ -23,8 +23,8 @@ const Home = ({darkMode}) => {
       <DarkMode darkMode={darkMode}/>
       <RTL darkMode={darkMode}/>
       <FlowSVg darkMode={darkMode}/>
-      <FlowGpt darkMode={darkMode}/>
       <FlowIllust darkMode={darkMode}/>
+      <FlowGpt darkMode={darkMode}/>  
     </div>
   )
 }
