@@ -172,7 +172,7 @@ const Blocks = ({darkMode}) => {
                 </div>
             </div>
             <div className='flex items-center justify-center mt-5 md:mt-12'>
-                <div className={`px-5.5 py-2.5 border rounded-lg text-base relative btn ${darkMode ? "dark:bg-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-70 dark:border-gray-600 ": " text-gray-900 border-gray-200  hover:text-blue-500 bg-white "}`}>
+                <div className={`px-5.5 py-2.5 border rounded-lg cursor-pointer text-base relative btn ${darkMode ? "dark:bg-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-70 dark:border-gray-600 ": " text-gray-900 border-gray-200  hover:text-blue-500 bg-white "}`}>
                     Views all block
                 </div>
             </div>

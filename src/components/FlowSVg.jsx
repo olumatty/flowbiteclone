@@ -33,7 +33,7 @@ const FlowSVg = ({ darkMode }) => {
                     <img
                       src={ImageLight}
                       alt="image"
-                      className="mx-auto rounded-xl max-w-full"
+                      className="min-h-[650px] w-[800px] mx-auto rounded-xl max-w-full"
                     />
                   </div>
                 </div>
@@ -69,7 +69,7 @@ const FlowSVg = ({ darkMode }) => {
               </blockquote>
 
               <div className="border-t border-gray-600 mt-3 h-auto"> 
-                <div className="flex flex-col gap-4.5 mt-4.5 ">
+                <div className="flex flex-col gap-3.5 mt-4.5 ">
                   <div className=" flex items-center gap-2">
                     <div
                       className={`p-1 shrink-0 rounded-full ${
@@ -78,10 +78,10 @@ const FlowSVg = ({ darkMode }) => {
                           : "bg-blue-100 text-blue-700 "
                       }`}
                     >
-                      <FaCheck className="h-4 w-4" />
+                      <FaCheck className="h-3 w-3" />
                     </div>
-                    <p className="text-[14px] md:[22px]">
-                      Increased accessibility based on room brightness
+                    <p className="text-[14px] md:text-[16px]">
+                    Huge collection of over 400+ SVG icons
                     </p>
                   </div>
 
@@ -93,10 +93,10 @@ const FlowSVg = ({ darkMode }) => {
                           : "bg-blue-100 text-blue-700 "
                       }`}
                     >
-                      <FaCheck className="h-4 w-4" />
+                      <FaCheck className="h-3 w-3" />
                     </div>
-                    <p className="text-[14px] md:[30px]">
-                      Better visibility for users with low vision
+                    <p className="text-[14px] md:text-[16px]">
+                    Free and open-source under the MIT License
                     </p>
                   </div>
                   <div className=" flex items-center gap-2">
@@ -107,10 +107,10 @@ const FlowSVg = ({ darkMode }) => {
                           : "bg-blue-100 text-blue-700 "
                       }`}
                     >
-                      <FaCheck className="h-4 w-4" />
+                      <FaCheck className="h-3 w-3" />
                     </div>
-                    <p className="text-[14px] md:[22px]">
-                      Improved readability for users with light sensitivity
+                    <p className="text-[14px] md:text-[16px]">
+                    Solid and outline styles included
                     </p>
                   </div>
                   <div className=" flex items-center gap-2">
@@ -121,17 +121,55 @@ const FlowSVg = ({ darkMode }) => {
                           : "bg-blue-100 text-blue-700 "
                       }`}
                     >
-                      <FaCheck className="h-4 w-4" />
+                      <FaCheck className="h-3 w-3" />
                     </div>
-                    <p className="text-[14px] md:[32px]">
-                      High quality UI/UX design for modern applications
+                    <p className="text-[14px] md:text-[16px]">
+                    Supports dark mode out of the box
+                    </p>
+                  </div>
+                  <div className=" flex items-center gap-2">
+                    <div
+                      className={`p-1 shrink-0 rounded-full ${
+                        darkMode
+                          ? "dark:text-blue-600 dark:bg-gray-700 "
+                          : "bg-blue-100 text-blue-700 "
+                      }`}
+                    >
+                      <FaCheck className="h-3 w-3" />
+                    </div>
+                    <p className="text-[14px] md:text-[16px]">
+                    Figma file available for designers
+                    </p>
+                  </div>
+                  <div className=" flex items-center gap-2">
+                    <div
+                      className={`p-1 shrink-0 rounded-full ${
+                        darkMode
+                          ? "dark:text-blue-600 dark:bg-gray-700 "
+                          : "bg-blue-100 text-blue-700 "
+                      }`}
+                    >
+                      <FaCheck className="h-3 w-3" />
+                    </div>
+                    <p className="text-[14px] md:text-[16px]">
+                    Compatible with Tailwind CSS and Flowbite
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="inline-flex items-center font-medium text-[14px] rounded-lg md:text-[16px] transition-all duration-200s  hover:bg-blue-500 bg-blue-600 text-white px-5 py-2.5 cursor gap-2 mt-12">
-                <p>Learn how to integrate dark mode</p>
+            
+            <div className="flex items-center gap-4">
+              <div className="inline-flex items-center font-medium text-[14px] rounded-lg md:text-[16px] transition-all duration-200s  hover:bg-blue-500 bg-blue-600 text-white px-5 py-2.5 cursor-pointer gap-2 mt-8">
+                <p>Get Started</p>
                 <MdOutlineArrowRightAlt className="h-6 w-6 max-w-full " />
+              </div>
+
+              <div className={`px-4 py-2.5 border rounded-lg cursor-pointer text-base relative btn mt-8 ${darkMode ? "dark:bg-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-70 dark:border-gray-600 ": " text-gray-900 border-gray-200  hover:text-blue-500 bg-white "}`}>
+                    Views on Github
+                </div>
+              <div>
+
+              </div>
               </div>
             </div>
           </div>

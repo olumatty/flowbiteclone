@@ -37,7 +37,7 @@ const Figma = ({ darkMode }) => {
 
               <div className="">
                 <div
-                  className={`flex items-center mb-4 justify-between self-stretch md:max-w-[400px] px-5 py-3.5 border focus:outline-none focus:ring-4 rounded-lg text-base relative  ${
+                  className={`flex items-center mb-4 justify-between cursor-pointer self-stretch md:max-w-[400px] px-5 py-3.5 border focus:outline-none focus:ring-4 rounded-lg text-base relative  ${
                     darkMode
                       ? "dark:bg-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-600 "
                       : " text-gray-900 border-gray-300 hover:bg-gray-100 hover:text-blue-500 focus:ring-gray-200 bg-white "
@@ -59,7 +59,7 @@ const Figma = ({ darkMode }) => {
                 </div>
 
                 <div
-                  className={`flex items-center mb-4 justify-between self-stretch md:max-w-[400px] px-5 py-3.5 border focus:outline-none focus:ring-4 rounded-lg text-base relative  ${
+                  className={`flex items-center mb-4 justify-between cursor-pointer self-stretch md:max-w-[400px] px-5 py-3.5 border focus:outline-none focus:ring-4 rounded-lg text-base relative  ${
                     darkMode
                       ? "dark:bg-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-600 "
                       : " text-gray-900 border-gray-300 hover:bg-gray-100 hover:text-blue-500 focus:ring-gray-200 bg-white "

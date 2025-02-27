@@ -90,7 +90,7 @@ const DarkMode = ({ darkMode }) => {
                     </div> 
                 </div>
               </div>
-              <div className='inline-flex items-center font-medium text-[14px] rounded-lg md:text-[16px] transition-all duration-200s  hover:bg-blue-500 bg-blue-600 text-white px-5 py-2.5 cursor gap-2 mt-6'>
+              <div className='inline-flex items-center cursor-pointer font-medium text-[14px] rounded-lg md:text-[16px] transition-all duration-200s  hover:bg-blue-500 bg-blue-600 text-white px-5 py-2.5 cursor gap-2 mt-6'>
                 <p>Learn how to integrate dark mode</p>
                 <MdOutlineArrowRightAlt className="h-6 w-6 max-w-full "/>
               </div>
