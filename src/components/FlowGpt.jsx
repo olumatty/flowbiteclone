@@ -2,6 +2,9 @@ import React from "react";
 import IMAGEDARK from "../assets/chat-gpt-dark.svg";
 import IMAGELIGHT from "../assets/chat-gptLight.svg";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
+import ChatGpt from "../assets/chat-gpt.svg"
+import { FaPlus } from "react-icons/fa6";
+import Flowbite from "../assets/Logo.svg";
 const FlowGpt = ({ darkMode }) => {
   return (
     <div
@@ -13,8 +16,12 @@ const FlowGpt = ({ darkMode }) => {
     >
       <div className="max-w-[1440px] px-4 py-8 mx-auto lg:py-24">
         <div className="grid items-center justify-center mx-auto grid-cols-1 lg:gap-28 md:grid-cols-2">
-          <div className="flex flex-col items-center">
-            <div className="flex flex-row items-center mb-8"></div>
+          <div className="flex flex-col">
+            <div className="flex flex-row  mb-8 gap-4 items-center">
+              <img src={ChatGpt} alt='Logo' className="h10 w-10" />
+              <FaPlus className={`h-5 w-5 font-bold ${darkMode? "text-gray-400" :" text-gray-500" } `} />
+              <img src={Flowbite} alt='Logo' className="h-10 w-10"/>
+            </div>
             <div>
               <blockquote className="mb-8">
                 <h3 className="mb-2 text-[16px] md:text-[32px] font-bold">
