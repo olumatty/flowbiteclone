@@ -4,7 +4,7 @@ import Flowbite from "../assets/Logo.svg"
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Figma from "../assets/figma.svg"
 import Tailwind from "../assets/tailwind.svg"
-import React from "../assets/react.svg";
+import Reacts from "../assets/react.svg";
 import ChatGpt from "../assets/chat-gpt.svg"
 
 const ProFlow = ({darkMode}) => {
@@ -77,7 +77,8 @@ const ProFlow = ({darkMode}) => {
              </div>
 
              <div className={`flex flex-wrap p-3 flex-col  rounded-lg ${darkMode ? "hover:bg-gray-700" : " hover:bg-gray-100"}`}>
-                <img src={React} className='h-6 w-6 md:h-8 md:w-8 mb-4'/>
+                
+                <img src={Reacts} className='h-6 w-6 md:h-8 md:w-8 mb-4'/>
                 <h2 className='font-semibold text-[18px] lg:text-[24px] mb-2'>React components (TypeScript)</h2>
                 <p className={` text-[18px] tracking-tight mb-2 ${darkMode ? " text-gray-400": " text-gray-500"}`}>Get access to the React templates built with TypeScript based on Tailwind CSS and the Flowbite React library including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &amp; Marketing pages</p>
                 <div className={`inline-flex items-center gap-2 ${darkMode ? "text-blue-500" : "text-blue-600" } `}>
@@ -87,7 +88,7 @@ const ProFlow = ({darkMode}) => {
              </div>
              
              <div className={`flex flex-wrap p-3 flex-col  rounded-lg ${darkMode ? "hover:bg-gray-700" : " hover:bg-gray-100"}`}>
-                <img src={Chagpt} className='h-6 w-6 md:h-8 md:w-8 mb-4'/>
+                <img src={ChatGpt} className='h-6 w-6 md:h-8 md:w-8 mb-4'/>
                 <h2 className='font-semibold text-[18px] lg:text-[24px] mb-2'>Flowbite GPT</h2>
                 <p className={` text-[18px] tracking-tight mb-2 ${darkMode ? " text-gray-400": " text-gray-500"}`}>Start generating website sections and pages based on the pro version of Flowbite and Tailwind CSS using a custom trained model of ChatGPT</p>
                 <div className={`inline-flex items-center gap-2 ${darkMode ? "text-green-500" : "text-green-600" } `}>
