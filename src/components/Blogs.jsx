@@ -43,7 +43,13 @@ const Blogs = ({darkMode}) => {
                 </div>
             </div>
             <div className='w-full max-w-2xl mx-auto'>
-                
+                <div className={`flex items-center justify-between py-4 border-t border-b ${darkMode ? " dark:border-gray-700" : "border-gray-200"} not-format`}>
+                    <span className='text-sm font-bold lg:mb-0'> 6 posts in total</span>
+                    
+                </div>
+                <div className={`divide-y ${darkMode ? "dark:divide-gray-200 " :"divide-gray-200"}`}>
+                        <article className='py-6'></article>
+                    </div>
             </div>
 
         </div>
