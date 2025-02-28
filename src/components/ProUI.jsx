@@ -5,7 +5,14 @@ import DarkKaban from "../assets/kanban-dark.svg";
 import LightKaban from "../assets/kanbanLight.svg";
 import DashboardDark from "../assets/dashboard-dark.svg";
 import DashboardLight from "../assets/dashboardLight.svg"
-
+import CalDark from "../assets/calendar-dark.svg";
+import CalLight from "../assets/calendarLight.svg"
+import ChartDark from "../assets/chatroom-dark.svg";
+import ChartLight from"../assets/chatroomLight.svg"
+import DataDark from "../assets/datatables-dark.svg";
+import DataLight from "../assets/datatablesLight.svg";
+import AIDark from "../assets/ai-prompts-dark.svg";
+import AILight from "../assets/ai-promptsLight.svg";
 
 const ProUI = ({darkMode}) => {
   return (
@@ -63,11 +70,11 @@ const ProUI = ({darkMode}) => {
     
                         <div className='relative flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-50 h-fit lg:h-72'>
                             <div className={`relative max-w-full h-full w-full rounded-lg ${darkMode ? "block" : "hidden"}`}>
-                                <img src={DashboardDark} alt='image' className=' border-b-lg max-w-full'/>
+                                <img src={DarkKaban} alt='image' className=' border-b-lg max-w-full'/>
                             </div>
     
                             <div className={`relative w-full h-auto  text-center ${darkMode ? "hidden" : "block"}`}>
-                                <img src={DashboardLight} alt='image' className='max-w-full'/>
+                                <img src={LightKaban} alt='image' className='max-w-full'/>
                             </div>
                         </div>
                     </div>
@@ -75,7 +82,7 @@ const ProUI = ({darkMode}) => {
                     <div className={`cursor-pointer rounded-lg transition-all duration-200 ease-linear border ${darkMode ? "dark:border-gray-800 dark:hover:border-gray-700 dark:shadow-lg-light dark:bg-gray-900 " : "border-gray-100 hover:border-white"}`}>
                         <div className={`rounded-t-lg py-2.5 px-5 flex  justify-between items-center border-b ${darkMode ? "dark:bg-gray-700 dark:border-gray-700 " : "bg-gray-50 border-gray-200 "}`}>
                             <div className='flex items-start flex-col'>
-                                <h3 className={`text-[14px] md:text-[16px] font-semibold ${darkMode ? "text-gray-300": "text-gray-900"}`}>Dashboard</h3>
+                                <h3 className={`text-[14px] md:text-[16px] font-semibold ${darkMode ? "text-gray-300": "text-gray-900"}`}>Calendar page</h3>
                             </div>
                             <div className={`${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>
                                 <FaArrowUpRightFromSquare className='h-3 w-3'/>
@@ -84,36 +91,84 @@ const ProUI = ({darkMode}) => {
     
                         <div className='relative flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-50 h-fit lg:h-72'>
                             <div className={`relative max-w-full h-full w-full rounded-lg ${darkMode ? "block" : "hidden"}`}>
-                                <img src={DashboardDark} alt='image' className=' border-b-lg max-w-full'/>
+                                <img src={CalDark} alt='image' className=' border-b-lg max-w-full'/>
                             </div>
     
                             <div className={`relative w-full h-auto  text-center ${darkMode ? "hidden" : "block"}`}>
-                                <img src={DashboardLight} alt='image' className='max-w-full'/>
+                                <img src={CalLight} alt='image' className='max-w-full'/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`cursor-pointer rounded-lg transition-all duration-200 ease-linear border ${darkMode ? "dark:border-gray-800 dark:hover:border-gray-700 dark:shadow-lg-light dark:bg-gray-900 " : "border-gray-100 hover:border-white"}`}>
+                        <div className={`rounded-t-lg py-2.5 px-5 flex  justify-between items-center border-b ${darkMode ? "dark:bg-gray-700 dark:border-gray-700 " : "bg-gray-50 border-gray-200 "}`}>
+                            <div className='flex items-start flex-col'>
+                                <h3 className={`text-[14px] md:text-[16px] font-semibold ${darkMode ? "text-gray-300": "text-gray-900"}`}>Chatroom page</h3>
+                            </div>
+                            <div className={`${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>
+                                <FaArrowUpRightFromSquare className='h-3 w-3'/>
+                            </div>
+                        </div>
+    
+                        <div className='relative flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-50 h-fit lg:h-72'>
+                            <div className={`relative max-w-full h-full w-full rounded-lg ${darkMode ? "block" : "hidden"}`}>
+                                <img src={ChartDark} alt='image' className=' border-b-lg max-w-full'/>
+                            </div>
+    
+                            <div className={`relative w-full h-auto  text-center ${darkMode ? "hidden" : "block"}`}>
+                                <img src={ChartLight} alt='image' className='max-w-full'/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`cursor-pointer rounded-lg transition-all duration-200 ease-linear border ${darkMode ? "dark:border-gray-800 dark:hover:border-gray-700 dark:shadow-lg-light dark:bg-gray-900 " : "border-gray-100 hover:border-white"}`}>
+                        <div className={`rounded-t-lg py-2.5 px-5 flex  justify-between items-center border-b ${darkMode ? "dark:bg-gray-700 dark:border-gray-700 " : "bg-gray-50 border-gray-200 "}`}>
+                            <div className='flex items-start flex-col'>
+                                <h3 className={`text-[14px] md:text-[16px] font-semibold ${darkMode ? "text-gray-300": "text-gray-900"}`}>Datatables page</h3>
+                            </div>
+                            <div className={`${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>
+                                <FaArrowUpRightFromSquare className='h-3 w-3'/>
+                            </div>
+                        </div>
+    
+                        <div className='relative flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-50 h-fit lg:h-72'>
+                            <div className={`relative max-w-full h-full w-full rounded-lg ${darkMode ? "block" : "hidden"}`}>
+                                <img src={DataDark} alt='image' className=' border-b-lg max-w-full'/>
+                            </div>
+    
+                            <div className={`relative w-full h-auto  text-center ${darkMode ? "hidden" : "block"}`}>
+                                <img src={DataLight} alt='image' className='max-w-full'/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`cursor-pointer rounded-lg transition-all duration-200 ease-linear border ${darkMode ? "dark:border-gray-800 dark:hover:border-gray-700 dark:shadow-lg-light dark:bg-gray-900 " : "border-gray-100 hover:border-white"}`}>
+                        <div className={`rounded-t-lg py-2.5 px-5 flex  justify-between items-center border-b ${darkMode ? "dark:bg-gray-700 dark:border-gray-700 " : "bg-gray-50 border-gray-200 "}`}>
+                            <div className='flex items-start flex-col'>
+                                <h3 className={`text-[14px] md:text-[16px] font-semibold ${darkMode ? "text-gray-300": "text-gray-900"}`}>Calendar page</h3>
+                            </div>
+                            <div className={`${darkMode ? "dark:text-gray-400 " : "text-gray-500"}`}>
+                                <FaArrowUpRightFromSquare className='h-3 w-3'/>
+                            </div>
+                        </div>
+    
+                        <div className='relative flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-50 h-fit lg:h-72'>
+                            <div className={`relative max-w-full h-full w-full rounded-lg ${darkMode ? "block" : "hidden"}`}>
+                                <img src={AIDark} alt='image' className=' border-b-lg max-w-full'/>
+                            </div>
+    
+                            <div className={`relative w-full h-auto  text-center ${darkMode ? "hidden" : "block"}`}>
+                                <img src={AILight} alt='image' className='max-w-full'/>
                             </div>
                         </div>
                     </div>
     
     
-    
-                    
-    
-                        
-    
-    
-    
-    
-                   
-    
-    
-    
-                
-                   
-    
                     
                 </div>
                 <div className='flex items-center justify-center mt-5 md:mt-12'>
-                    <div className={`px-5.5 py-2.5 border rounded-lg cursor-pointer text-base relative btn ${darkMode ? "dark:bg-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-70 dark:border-gray-600 ": " text-gray-900 border-gray-200  hover:text-blue-500 bg-white "}`}>
-                        Views all block
+                    <div className={`px-5.5 py-2.5 border rounded-lg cursor-pointer text-base relative ${darkMode ? "dark:bg-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-70 dark:border-gray-600 ": " text-gray-900 border-gray-200  hover:text-blue-500 bg-white "}`}>
+                        Load more pages
                     </div>
                 </div>
             </div>
