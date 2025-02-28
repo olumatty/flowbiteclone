@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import { FaReact } from "react-icons/fa";
+import Flowbite from "../assets/Logo.svg"
 
 const ProFlow = ({darkMode}) => {
   return (
@@ -11,7 +11,7 @@ const ProFlow = ({darkMode}) => {
               : "bg-gray-50 border-gray-700 "
           }`}
         >
-          <div className="max-w-full px-4 py-8 mx-auto lg:py-20">
+          <div className="max-w-[1440px] px-4 py-8 mx-auto lg:py-20">
             <motion.h1
               initial={{ y: 25, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -25,189 +25,21 @@ const ProFlow = ({darkMode}) => {
                 darkMode ? "dark:text-gray-400" : "text-gray-500"
               }`}
             >
-              You can now also get started with open-source component libraries
-              built for <br />
-              frameworks such as React, Vue.js, Svelte and Angular.
+              You'll get access to hundreds of pages and components built with Tailwind CSS for application, marketing, and e-commerce user interfaces including the Figma design files based on the Flowbite component library.
             </p>
     
             <div
-              className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-0 md:space-y-4 gap-4 lg:gap- md:mt-10 cursor-pointer md:px-50 `}
+              className={`grid grid-cols-1 md:grid-cols-2 gap-6 cursor-pointer`}
             >
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border hover:shadow-lg transition duration-300 ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600"
-                    : "bg-white border-gray-200"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
-    
-              <div
-                className={`px-8 py-10 text-center rounded-lg shadow-md border ${
-                  darkMode
-                    ? "dark:bg-gray-700 dark:border-gray-600 dark:hover:shadow-lg"
-                    : "bg-white border-gray-200 hover:shadow-lg"
-                }`}
-              >
-                <FaReact className="w-12 h-12 mx-auto text-blue-500" />
-                <h3 className="font-semibold text-[16px] mt-3">Flowbite React</h3>
-              </div>
+             <div className={`flex flex-wrap p-3 flex-col  rounded-lg ${darkMode ? "hover:bg-gray-700" : " hover:bg-gray-100"}`}>
+                <img src={Flowbite} className='h-6 w-6 md:h-8 md:w-8 mb-4'/>
+                <h2 className='font-semibold text-[18px] lg:text-[24px] mb-2'>Flowbite Blocks</h2>
+                <p className={` text-sm font-medium tracking-tight ${darkMode ? " text-gray-400": " text-gray-500"}`}>Get access to over 450+ premium website sections built with Tailwind CSS and Flowbite to quickly build a website or application based on the Marketing, Application and E-commerce UI categories</p>
+                <div className={`inline-flex items-center gap-2 `}>
+                    <span></span>
+                </div>
+
+             </div>
             </div>
           </div>
         </div>
