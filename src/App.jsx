@@ -39,7 +39,7 @@ const App = () => {
             <Route path="/icons" element={<Icons />} />
             <Route path="/illustrations" element={<Illustrations />} />
             <Route path="/blog" element={<Blog darkMode={darkMode}  />} />
-            <Route path="/proversion" element={<ProVersion />} />
+            <Route path="/proversion" element={<ProVersion darkMode={darkMode} />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/login" element={<Login />} />
           </Routes>
