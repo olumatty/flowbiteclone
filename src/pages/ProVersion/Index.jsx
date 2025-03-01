@@ -7,6 +7,7 @@ import ProUI from '../../components/ProUI'
 import ProMarket from '../../components/ProMarket'
 import ProHero from '../../components/ProHero'
 import NewsLetter from "../../components/NewsLetter"
+import RoadMap from '../../components/RoadMap'
 
 const ProVersion = ({darkMode}) => {
   return (
@@ -18,6 +19,7 @@ const ProVersion = ({darkMode}) => {
       <ProUI darkMode ={darkMode}/>
       <ProMarket darkMode={darkMode}/>
       <ProHero darkMode={darkMode}/>
+      <RoadMap darkMode ={darkMode}/>
       <NewsLetter darkMode={darkMode}/>
     </div>
   )
