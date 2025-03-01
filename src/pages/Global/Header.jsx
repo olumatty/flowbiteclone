@@ -210,7 +210,7 @@ const Header = ({ darkMode, setDarkMode }) => {
               <div className="text-gray-800 dark:text-white flex items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`lg:hidden cursor-pointer w-10 h-10 text-sm p-2.5 inline-flex items-center justify-center focus:outline-none focus:ring-4 ${
+                className={`lg:hidden cursor-pointer w-10 h-10 mr-4 text-sm p-2.5 inline-flex items-center justify-center focus:outline-none focus:ring-4 ${
                   darkMode
                     ? "dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
                     : "text-gray-500 hover:bg-gray-100 focus:ring-gray-200"
