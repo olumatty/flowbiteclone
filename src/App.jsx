@@ -35,12 +35,9 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home key={darkMode ? "dark" : "light"} darkMode={darkMode} setDarkMode={setDarkMode} />} />
             <Route path="/blocks" element={<Blocks darkMode={darkMode}  />} />
-            <Route path="/figma" element={<Figma />} />
-            <Route path="/icons" element={<Icons />} />
-            <Route path="/illustrations" element={<Illustrations />} />
             <Route path="/blog" element={<Blog darkMode={darkMode}  />} />
             <Route path="/proversion" element={<ProVersion darkMode={darkMode} />} />
-            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/pricing" element={<Pricing darkMode={darkMode} />} />
             <Route path="/login" element={<Login />} />
           </Routes>
           <Footer darkMode={darkMode} />

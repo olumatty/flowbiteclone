@@ -2,9 +2,9 @@ import React from "react";
 
 const Question = ({ darkMode }) => {
   return (
-    <div className="py-8 lg:py-24 mb-8 ">
+    <div className="py-8  mb-8 ">
       <div className="px-4 mx-auto max-w-[1440px] lg:px-4">
-        <h2 className="mb-4 text-2xl font-bold text-gray-900 lg:font-extrabold lg:text-4xl lg:leading-snug lg:text-center 2xl:px-48">
+        <h2 className="mb-4 text-2xl font-bold  lg:font-extrabold lg:text-4xl lg:leading-snug lg:text-center 2xl:px-48">
           Frequently asked questions
         </h2>
         <p

@@ -80,24 +80,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                 >
                   Blocks
                 </li>
-                <li
-                  onClick={() => navigate("/figma")}
-                  className="hover:dark:text-blue-700"
-                >
-                  Figma
-                </li>
-                <li
-                  onClick={() => navigate("/icons")}
-                  className="hover:dark:text-blue-700"
-                >
-                  Icons
-                </li>
-                <li
-                  onClick={() => navigate("/illustrations")}
-                  className="hover:dark:text-blue-700"
-                >
-                  Illustrations
-                </li>
+               
                 <li
                   onClick={() => navigate("/blog")}
                   className="hover:dark:text-blue-700"
@@ -258,24 +241,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                 >
                   Blocks
                 </li>
-                <li
-                  onClick={() => navigate("/figma")}
-                  className="hover:dark:text-blue-600"
-                >
-                  Figma
-                </li>
-                <li
-                  onClick={() => navigate("/icons")}
-                  className="hover:dark:text-blue-600"
-                >
-                  Icons
-                </li>
-                <li
-                  onClick={() => navigate("/illustrations")}
-                  className="hover:dark:text-blue-600"
-                >
-                  Illustrations
-                </li>
+                
                 <li
                   onClick={() => navigate("/blog")}
                   className="hover:dark:text-blue-700"
