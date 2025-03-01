@@ -159,7 +159,7 @@ const Header = ({ darkMode, setDarkMode }) => {
 
           {/* Small and Medium screen */}
           <div className="lg:hidden flex items-center justify-between gap-4 md:gap-x-10">
-            <div className="flex items-center gap-x-6 md:gap-x-12 ">
+            <div className="flex items-center gap-x-5 md:gap-x-12 ">
               <div className="flex items-center gap-x-3">
                 <img src={Logo} alt="logo" className="h-4 w-4 md:max-w-full" />
                 <span className="self-center text-[18px] md:text-2xl font-semibold whitespace-nowrap">
@@ -182,7 +182,7 @@ const Header = ({ darkMode, setDarkMode }) => {
 
             <div className="gap-4 flex items-center">
               <div
-                className={`md:hidden cursor-pointer ${
+                className={`hidden cursor-pointer ${
                   darkMode
                     ? "dark:bg-gray-100 dark:text-gray-500  hover:dark:bg-gray-600 hover:dark:text-white"
                     : "bg-gray-300 text-gray-900 hover:bg-gray-200"
@@ -201,24 +201,25 @@ const Header = ({ darkMode, setDarkMode }) => {
               <div className="flex">
                 <button
                   onClick={() => navigate("/login")}
-                  className="py-[8px] text-[12px] md:text-[14px] md:py-[10px] px-3 md:px-5 rounded-[10px] bg-blue-700 text-white cursor-pointer flex items-center transition-all duration-200 ease-linear group hover:bg-blue-900"
+                  className="py-[8px] text-[10px] shrink-0 whitespace-nowrap md:text-[14px] md:py-[10px] px-5 md:px-5 rounded-[10px] bg-blue-700 text-white cursor-pointer flex items-center transition-all duration-200 ease-linear group hover:bg-blue-900"
                 >
                   Sign in
                 </button>
               </div>
 
-              <div className="text-gray-800  dark:text-white flex items-center">
-                <button
-                  onClick={() => setIsOpen(!isOpen)}
-                  className={`lg:hidden ml-1 cursor-pointer w-10 h-10 text-sm p-2.5 inline-flex items-center justify-center focus:outline-none focus:ring-4 ${
-                    darkMode
-                      ? "dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-700  "
-                      : "text-gray-500 hover:bg-gray-100 focus:ring-gray-200"
-                  }`}
-                >
-                  <MdMenu size={30} className="" />
-                </button>
-              </div>
+              <div className="text-gray-800 dark:text-white flex items-center">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className={`lg:hidden cursor-pointer w-10 h-10 text-sm p-2.5 inline-flex items-center justify-center focus:outline-none focus:ring-4 ${
+                  darkMode
+                    ? "dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
+                    : "text-gray-500 hover:bg-gray-100 focus:ring-gray-200"
+                } ml-auto w-auto max-w-full`}
+              >
+                <MdMenu size={28} />
+              </button>
+            </div>
+
             </div>
           </div>
 
