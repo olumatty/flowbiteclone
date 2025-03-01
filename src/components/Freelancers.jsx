@@ -9,7 +9,7 @@ import Person6 from "../assets/person_three.jpg"
 
 const Freelancers = ({ darkMode }) => {
   return (
-    <div className="border-t border-gray-800">
+    <div className="border-t border-b border-gray-800">
       <div className="max-w-[1440px] px-4 py-8 mx-auto lg:py-20">
         <motion.h1
           initial={{ y: 25, opacity: 0 }}

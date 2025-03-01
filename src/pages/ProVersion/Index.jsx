@@ -9,6 +9,7 @@ import ProHero from '../../components/ProHero'
 import NewsLetter from "../../components/NewsLetter"
 import RoadMap from '../../components/RoadMap'
 import Freelancers from '../../components/Freelancers'
+import Price from '../../components/Questions'
 
 const ProVersion = ({darkMode}) => {
   return (
@@ -22,6 +23,7 @@ const ProVersion = ({darkMode}) => {
       <ProHero darkMode={darkMode}/>
       <RoadMap darkMode ={darkMode}/>
       <Freelancers darkMode ={darkMode}/>
+      <Price darkMode= {darkMode}/>
       <NewsLetter darkMode={darkMode}/>
     </div>
   )
